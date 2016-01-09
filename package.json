@@ -1,0 +1,24 @@
+{
+  "name": "places",
+  "version": "1.0.0",
+  "description": "Places is React application that searches places for food,bar and clubs",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.14.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "places",
+    "search",
+    "googlemaps",
+    "bars",
+    "clubs",
+    "food",
+    "restourants"
+  ],
+  "author": "Mirza Arifovic",
+  "license": "ISC"
+}
