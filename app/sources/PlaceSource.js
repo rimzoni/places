@@ -1,7 +1,7 @@
 var PlaceActions = require('../actions/PlaceActions');
 
 var mockData = [
-  { id: 0, name: 'Druga kuca', description: 'Druga kuća - Lora je nastala iz želje da svojim prijateljima', image: 'http://placehold.it/150x100',lat: '43.8539973',lng: '18.3860037', category:'Food' , active: true },
+  { id: 0, name: 'Druga kuca', description: 'Druga kuca.', image: 'http://placehold.it/150x100',lat: '43.8539973',lng: '18.3860037', category:'Food' , active: true },
   { id: 1, name: 'Slatko i Slano', description: 'Veoma dobra kuhinja.', image: 'http://placehold.it/150x100',lat: '43.8530275',lng: '18.3834648', category:'Bar' , active: true},
   { id: 2, name: 'Paper Moon', description: 'Restoran/Vinarija', image: 'http://placehold.it/150x100',lat: '43.8508628',lng: '18.38866', category:'Club', active: true },
   { id: 3, name: 'Buenos Aires', description: 'Juzno Americka kuhinja', image: 'http://placehold.it/150x100',lat: '43.8539973',lng: '18.3860037', category:'Food' , active: true},
