@@ -5,7 +5,12 @@ import {Grid} from 'react-mdl';
 
 class Filters extends React.Component {
   addFilterState(ev) {
-    var filter = ev.target.getAttribute('data-id');
+      var filter = null;
+    if(ev.target.getAttribute('class') == 'mdl-button mdl-js-button mdl-button--raised'){
+        filter = 'all';
+    }else{
+      filter = ev.target.getAttribute('data-id');
+    }
     PlaceActions.filterPlaces(filter);
     FilterActions.setActiveFilters(filter);
   }

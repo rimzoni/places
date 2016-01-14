@@ -56,20 +56,19 @@ class FiltersStore {
   }
   
   setActiveFilters(filter) {
-    var allFilters = this.filters;
-
+    
+    if(filter == 'all'){
+       this.removeActiveFilter();
+       return true; 
+    }
+    
     this.removeActiveFilter();
-
-    allFilters.forEach((filter) => {
-      for (var i = 0; i < this.filters.length; i += 1) {
-          
-        if (this.filters[i].id === filter.id) {
-          this.filters[i].is_active = true;
-          break;
-        }
-        break;
-      }
-    });
+    
+    this.filters.map((filterIndex, i) => {
+            if (filterIndex.name == filter) {
+            filterIndex.is_active = true;
+            }  
+          });
   }
  
    getFilter(id) {

@@ -35,7 +35,7 @@ class PlaceStore {
     this.errorMessage = errorMessage;
   }
   
-   resetAllFilters() {
+   removePlacesFromDisplay() {
     this.places = this.places.map((place) => {
       return {
         id: place.id,
@@ -49,12 +49,32 @@ class PlaceStore {
       };
     }); 
   }
+  
+    removeFilters() {
+    this.places = this.places.map((place) => {
+      return {
+        id: place.id,
+        name: place.name,
+        description: place.description,
+        image: place.image,
+        lat: place.lat,
+        lng: place.lng,
+        category: place.category,
+        active: true
+      };
+    }); 
+  }
+   
    
   
     
     filterPlaces(filter) {
-
-    this.resetAllFilters();
+    
+    if(filter=='all'){
+        this.removeFilters();
+        return this.place;
+    }
+    this.removePlacesFromDisplay();
     
     var filteredPlaces = [];
     var j = 0;
@@ -69,7 +89,8 @@ class PlaceStore {
     }
     
   searchPlaces(search){
-      this.resetAllFilters();
+    
+    this.removePlacesFromDisplay();
     
     var filteredPlaces = [];
     var j = 0;
