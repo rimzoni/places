@@ -8,9 +8,9 @@ class Place extends React.Component {
        var { data } = this.props;
     return (
         
-        <Card  className="mdl-card">
-           <div className="mdl-card__title mdl-card--expand">
-           <img src={data.image}  border="0" alt=""  />
+        <Card  className="mdl-card mdl-shadow--2dp">
+           <div className="mdl-card__title">
+           <img src={data.image} width="150" height="100" border="0" alt=""  />
             </div>
             <div className="mdl-card__supporting-text">
                 {data.description}

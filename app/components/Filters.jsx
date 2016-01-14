@@ -13,17 +13,17 @@ class Filters extends React.Component {
   render() {
     var { data } = this.props;
     return (
-       <div className="filterMenu">
+       <Grid className="filterMenu mdl-shadow--1dp">
         {data.map((filter, i) => {
           return (
-              <div id="loopObject" key={i}>
+              <div id="loopObject" className="mdl-cell mdl-cell--4-col" key={i}>
               <button id="filter" className={filter.is_active==true ? 'mdl-button mdl-js-button mdl-button--raised' :'mdl-button mdl-js-button' }  onClick={this.addFilterState} data-id={filter.name} >
                 {filter.name}
               </button>
               </div>
           );
         })}
-      </div>         
+      </Grid>         
     );
   }
 };

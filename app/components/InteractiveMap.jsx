@@ -15,7 +15,7 @@ class InteractiveMap extends React.Component {
                 center={[43.8490677,18.3935693]}
                 zoom={15}
                 >
-              
+             
                 </GoogleMapReact>
                 
              </div>

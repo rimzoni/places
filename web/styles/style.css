@@ -34,37 +34,18 @@
 }
 .loopObject{
     position: relative;
-    display: inline-block;
+    display: block;
 }
 .filterMenu{
     position: relative;
-    left: 40%;
+    display: block;
 }
-
-.mdl-card__media{
-    background: none;
-}
-.mdl-card__media img{
-    width: 120px;
-    height: 100px;
-}
-.mdl-card__title-text {
-  color: #fff;
-  background: #46B6AC;
-}
+                
 .mdl-card{
-    position: absolute;
-    width: 100%;
+    max-width: 245px;
+    height: 100%;
 }
 
-.mdl-card__title mdl-card--expand{
-    position: absolute;
-    width: 100%;
-}
-.mdl-grid{
-    positon:absolute;
-    width:100%
-}
 
 /* Mixin */
 .border-radius {
