@@ -1,4 +1,4 @@
-# Welcome to Places 
+# Places app
 
 Application displays places inside city.
 
